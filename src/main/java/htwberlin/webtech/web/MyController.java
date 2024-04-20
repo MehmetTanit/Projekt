@@ -8,12 +8,12 @@ import java.util.List;
 @RestController
 public class MyController {
     @GetMapping("/todos")
-    public List<GesundheitsTracker> greeting() {
-        GesundheitsTracker entry = new GesundheitsTracker(15, "Test", 15,12, "aad", "aha");
-        GesundheitsTracker entry1 = new GesundheitsTracker(15, "Test", 15,12, "aad", "aha");
-        GesundheitsTracker entry2 = new GesundheitsTracker(15, "Test", 15,12, "aad", "aha");
-        GesundheitsTracker entry3 = new GesundheitsTracker(15, "Test", 15,12, "aad", "aha");
-        GesundheitsTracker entry4 = new GesundheitsTracker(15, "Test", 15,12, "aad", "aha");
+    public List<HealthTracker> greeting() {
+        HealthTracker entry = new HealthTracker(100, "120/80 mmHg ", 76,5000, "7 Stunden, gut", "5.7 mmol/L");
+        HealthTracker entry1 = new HealthTracker(134, "110/80 mmHg ", 87,6000, "6 Stunden, genügend", "6.7 mmol/L");
+        HealthTracker entry2 = new HealthTracker(120, "130/70 mmHg ", 80,7689, "5 Stunden, zu wenig", "7.7 mmol/L");
+        HealthTracker entry3 = new HealthTracker(110, "110/60 mmHg ", 90,8696, "8 Stunden, gut", "4.7 mmol/L");
+        HealthTracker entry4 = new HealthTracker(122, "112/80 mmHg ", 56,5647, "4 Stunden, zu wenig", "6.5 mmol/L");
         return List.of(entry, entry1, entry2, entry3, entry4);
     }
 
